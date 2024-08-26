@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
             n[i]="Grid"+i;
         }
         gv=(GridView)findViewById(R.id.grid);
-        ArrayAdapter<String> a = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, n);
+        ArrayAdapter<String> a = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, n);
         gv.setAdapter(a);
 
         gv.setOnItemClickListener(new AdapterView.OnItemClickListener() {

@@ -8,14 +8,31 @@
     tools:context=".MainActivity">
 
     <GridView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
         android:id="@+id/grid"
-        android:numColumns="3"
+        android:layout_width="411dp"
+        android:layout_height="647dp"
         android:horizontalSpacing="10dp"
-        android:verticalSpacing="10dp"
+        android:numColumns="3"
         android:padding="10dp"
-        android:background="@drawable/grid_item_background">
+        android:verticalSpacing="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.964">
+
     </GridView>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GridView Example"
+        android:textSize="45sp"
+        app:layout_constraintBottom_toTopOf="@+id/grid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
